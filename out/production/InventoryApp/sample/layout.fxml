@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="662.0" style="-fx-background-color: #f0ece3;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="36.0" prefWidth="662.0" />
+      <HBox layoutX="13.0" layoutY="38.0" prefHeight="186.0" prefWidth="635.0">
+         <children>
+            <VBox prefHeight="208.0" prefWidth="394.0">
+               <children>
+                  <TextField fx:id="nameProd" promptText="Enter Name of Product">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="quanProd" promptText="Enter Quantity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <TextField fx:id="priceProd" promptText="Enter Price">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <Button mnemonicParsing="false" onAction="#addProdB" prefHeight="26.0" prefWidth="156.0" text="Add Product">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#shipProdB" prefHeight="26.0" prefWidth="153.0" text="Ship Product">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="195.0" prefWidth="429.0">
+               <children>
+                  <TextField fx:id="infoProd" prefHeight="26.0" prefWidth="267.0" promptText="Enter name of product for product details">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></TextField>
+                  <Button mnemonicParsing="false" onAction="#searchProdB" text="Search">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="120.0" right="10.0" top="10.0" />
+                     </VBox.margin></Button>
+                  <Label fx:id="labelInfo" prefHeight="79.0" prefWidth="238.0" text="Product Details" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="50.0" right="15.0" top="15.0" />
+                     </VBox.margin></Label>
+               </children>
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <Pane layoutX="13.0" layoutY="236.0" prefHeight="316.0" prefWidth="632.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="280.0">
+         <children>
+            <ListView fx:id="listProd" layoutX="152.0" layoutY="3.0" prefHeight="238.0" prefWidth="328.0" />
+            <Label fx:id="proflossLabel" layoutX="145.0" layoutY="247.0" prefHeight="26.0" prefWidth="115.0" text="Profit/Loss">
+               <padding>
+                  <Insets left="30.0" />
+               </padding></Label>
+            <Label fx:id="plValLabel" layoutX="363.0" layoutY="244.0" prefHeight="26.0" prefWidth="115.0">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <Label fx:id="invenValLabel" layoutX="366.0" layoutY="275.0" prefHeight="26.0" prefWidth="115.0">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <Label layoutX="135.0" layoutY="275.0" prefHeight="26.0" prefWidth="142.0" text="Inventory Cost">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
